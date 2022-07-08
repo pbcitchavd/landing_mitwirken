@@ -1,0 +1,189 @@
+/****************************************
+                    APP
+****************************************/
+
+
+.app--container {
+    margin: 0 32px  ;
+}
+
+
+.app--badge {
+    font-size: 14px;
+
+}
+
+@media screen and (min-width: 1280px){
+    .app--container {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/****************************************
+                    PRIVACY
+****************************************/
+.privacy--container {
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+    background-color: var(--pbc-aqua-dark);
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    padding: 6px 12px;
+    z-index: 12;
+    box-shadow: 2px 4px 12px rgba(244,244,244,.4);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+@media only screen and (min-width: 1024px){
+
+    .privacy--container {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+
+/****************************************
+                    HERO
+****************************************/
+.hero--container {
+    background-color: var(--pbc-sky-blue);
+}
+
+.hero--img-fluid {display: none}
+
+.hero--img-background {
+    width: 100%;
+    height: calc(100vh - 196px - 45px);
+    background-size: cover;
+    background-position: 85% center;
+    background-image: url("https://icloud.pbc-it.de/s/Eyez8P9yYPHA8o3/preview");
+}
+
+.hero--header-wrapper {
+    display: block;
+    padding-top: 42px;
+    padding-bottom: 25px;
+    height: 196px;
+    box-sizing: border-box;
+    min-width: 330px;
+}
+
+.hero--title {
+    font-size: clamp(2.4rem, 5vw, 4.7rem );
+    font-family: Graphik-Regular, sans-serif;
+    margin-bottom: 19px;
+}
+
+.hero--subtitle {
+    font-size: clamp(1.7rem, 2vw, 2.9rem );
+}
+
+
+.hero--footer--txt-wrapper {
+    max-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+
+.hero--pbc-logo {
+
+}
+
+@media screen and (min-width: 1024px){
+    .hero--img-background {display: none}
+
+    .hero--img-fluid {
+        display: block;
+        width: 100%;
+        height: calc(100vh);
+        background-size: cover;
+        background-position: 85% center;
+        background-image: url("https://icloud.pbc-it.de/s/Eyez8P9yYPHA8o3/preview");
+    }
+    .hero--title {
+        margin-top: 100px;
+        padding: 1.9rem 2.2rem 2.7rem 0;
+        background-color: var(--pbc-sky-blue);
+        display: inline-block;
+    }
+
+    .hero--footer--txt-wrapper,
+    .hero--title,
+    .hero--subtitle{
+        padding-left: 9rem;
+    }
+
+    .hero--footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+    }
+    .hero--footer--txt-wrapper {
+       justify-content: flex-start;
+    }
+
+    .hero--pbc-logo {
+        padding-left: 15px;
+    }
+
+}
+
+/*.app--fullscreen-banner {*/
+/*    background: url("https://icloud.pbc-it.de/s/Eyez8P9yYPHA8o3/preview") no-repeat center center fixed;*/
+/*    background-size: cover;*/
+/*    height: 100%;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.section--banner-wrapper {*/
+/*    position: fixed;*/
+/*    top: -40%;*/
+/*    left: -106%;*/
+/*    width: 207%;*/
+/*    height: 200%;*/
+/*}*/
+
+/*@media screen and (max-width: 1024px) { !* Specific to this particular image *!*/
+/*    img.bg {*/
+/*        left: 50%;*/
+/*        margin-left: -512px;   !* 50% *!*/
+/*    }*/
+/*}*/
+
+/*.section--banner {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*    min-width: 49%;*/
+/*    min-height: 29%;*/
+/*}*/
+
+/*@media screen and (min-width: 772px) {*/
+
+
+/*    .section--banner-wrapper {*/
+/*        top: -50%;*/
+/*        left: -50%;*/
+/*        width: 200%;*/
+/*        height: 200%;*/
+/*    }*/
+
+/*    .section--banner {*/
+/*        min-width: 50%;*/
+/*        min-height: 50%;*/
+/*    }*/
+
+/*}*/

@@ -1,0 +1,8 @@
+FROM node
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . .
+ENV REACT_APP_VERSION=1.0.0
+
+RUN npm run build

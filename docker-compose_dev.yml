@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile_dev
+    container_name: mitwirken_api_backend_dev
+    volumes:
+      - ./backend:/app
+    # command: sh -c "cd ./backend && gunicorn core.wsgi:application --bind 0.0.0.0:8000"
+    command: python manage.py runserver 0.0.0.0:8001
+
+    ports:
+      - "8001:8001"
+
+  frontened:
+    build:
+      context: ./forntend
+      dockerfile: Dockerfile_dev
+    container_name: mitwirken_frontend_dev
+    volumes:
+      - ./forntend:/app
+
+    depends_on:
+      - backend
+    ports:
+      - "8080:3000"
+
