@@ -58,7 +58,7 @@ services:
       - traefik.http.routers.web-radverkehr.rule=Host(`mitwirken.eu`)
       - traefik.http.routers.web-radverkehr.middlewares=https-redirect@file
 
-      - traefik.http.routers.web-radverkehr-sec.entrypoints=httpsd
+      - traefik.http.routers.web-radverkehr-sec.entrypoints=https
       - traefik.http.routers.web-radverkehr-sec.entrypoints=Host(`mitwirken.eu`)
 
       - traefik.http.routers.web-radverkehr-sec.tls=true
