@@ -59,7 +59,7 @@ services:
       - traefik.http.routers.nginx-mitwirken.middlewares=https-redirect@file
 
       - traefik.http.routers.nginx-mitwirken-sec.entrypoints=https
-      - traefik.http.routers.nginx-mitwirken-sec.entrypoints=Host(`mitwirken.eu`)
+      - traefik.http.routers.nginx-mitwirken-sec.rule=Host(`mitwirken.eu`)
 
       - traefik.http.routers.nginx-mitwirken-sec.tls=true
       - traefik.http.routers.nginx-mitwirken-sec.tls.certresolver=le
