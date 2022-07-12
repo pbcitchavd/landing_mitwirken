@@ -24,7 +24,7 @@
 /****************************************
                     PRIVACY
 ****************************************/
-.privacy--container {
+.pbcprivacy--container {
     position: fixed;
     bottom: 10%;
     right: 10px;
@@ -36,6 +36,23 @@
     z-index: 12;
     box-shadow: 2px 4px 12px rgba(244,244,244,.4);
     transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.privacy--container {
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+    height: 45px;
+    width: 45px;
+    box-shadow: 2px 4px 12px rgba(244,244,244,.4);
+    border-radius: 50%;
+
+}
+
+.privacy--img {
+    width: 100%;
+    object-fit: contain;
+
 }
 
 @media only screen and (min-width: 1024px){
@@ -89,13 +106,13 @@
     max-height: 45px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 15px 0;
 }
 
 
 .hero--pbc-logo {
-
+    padding-left: 15px;
 }
 
 @media screen and (min-width: 1024px){
@@ -132,9 +149,6 @@
        justify-content: flex-start;
     }
 
-    .hero--pbc-logo {
-        padding-left: 15px;
-    }
 
 }
 
