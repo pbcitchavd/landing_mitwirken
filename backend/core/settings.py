@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-&2+9ui79gu!f&y-i1@vyx*_r^=q5i8*zvmm1dxr+hxu&xc^s=o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', 'mitwirken.localhost', 'mitwirken.eu']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', 'mitwirken.localhost', 'mitwirken.eu', '168.119.116.121']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.mitwirken.eu',
