@@ -39,6 +39,8 @@
 }
 
 .privacy--container {
+    background: url("../static/img/m_datenschutz_icon.png");
+    background-size: contain;
     position: fixed;
     bottom: 10%;
     right: 10px;
@@ -146,7 +148,7 @@
         bottom: 15px;
     }
     .hero--footer--txt-wrapper {
-       justify-content: flex-start;
+        justify-content: flex-start;
     }
 
 
