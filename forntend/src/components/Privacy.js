@@ -9,10 +9,9 @@ const Privacy = () => {
                     href={"https://www.pbconsult.de/impressum/"}
                     target="_blank"
                     rel="noreferrer"
+                    className="privacy--link"
+                />
 
-                >
-
-                </a>
                 {/*<img src={Datenschutz}  height="45" width="45"/>*/}
             </div>
     )

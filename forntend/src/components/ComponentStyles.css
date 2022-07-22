@@ -48,7 +48,13 @@
     width: 45px;
     box-shadow: 2px 4px 12px rgba(244,244,244,.4);
     border-radius: 50%;
+    z-index: 1;
+}
 
+.privacy--link {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 .privacy--img {
