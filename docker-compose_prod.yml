@@ -20,8 +20,8 @@ services:
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
     networks:
       - backend-network
-  #    ports:
-#      - "8000:8000"
+    ports:
+      - "8800:8000"
 
   frontened:
     build:
@@ -55,7 +55,14 @@ services:
     labels:
       - traefik.enable=true
       - traefik.http.routers.nginx-mitwirken.entrypoints=http
-      - traefik.http.routers.web-radverkehr.rule=Host(`dev.landing.mitwirken.eu`)
+      - traefik.http.routers.nginx-mitwirken.rule=Host(`mitwirken.eu`)
+      - traefik.http.routers.nginx-mitwirken.middlewares=https-redirect@file
+
+      - traefik.http.routers.nginx-mitwirken-sec.entrypoints=https
+      - traefik.http.routers.nginx-mitwirken-sec.rule=Host(`mitwirken.eu`)
+
+      - traefik.http.routers.nginx-mitwirken-sec.tls=true
+      - traefik.http.routers.nginx-mitwirken-sec.tls.certresolver=le
 
 
 volumes:

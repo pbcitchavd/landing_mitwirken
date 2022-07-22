@@ -17,3 +17,13 @@ build:
   context: .
   dockerfile: webapp.Dockerfile
 ```
+
+
+### Project 
+
+```
+server: pbcinvolvement
+ip:
+docker: docker-compose -f docker-compose_prod.yml -p mitwirken_eu_laendig up --build -d
+
+```

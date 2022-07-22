@@ -14,7 +14,7 @@ function App() {
 
     React.useEffect(() => {
     //fetch('/api/')
-    fetch('http://127.0.0.1:8001/api/')
+    fetch('http://127.0.0.1:8000/api/')
         .then(res => res.json())
         .then(data => setData(data))
     }, [])
