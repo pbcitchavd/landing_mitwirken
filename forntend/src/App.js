@@ -24,6 +24,7 @@ function App() {
 
     return (
         <div className="App app--fullscreen-banner">
+            <h1>tesr</h1>
             <Privacy/>
             {/*<Header data={data} />*/}
             <Hero />
